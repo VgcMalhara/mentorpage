@@ -7,10 +7,11 @@ import Card from "./Card";
 
 const Metro = () => {
   return (
-    <div className="grid lg:grid-cols-2 md:grid-cols-1 bg-white max-w-7xl mx-auto border-2 border-black border-t-0">
+<div className="grid lg:grid-cols-2 grid-cols-1  bg-white max-w-7xl mx-auto border-2 border-black border-t-0 ">
+
       {/* Left Section */}
       <div className="w-full lg:flex items-center border-black p-6 border-r-0 lg:border-r-2">
-        <div className="mx-auto ml-5 sm:ml-12">
+        <div className="flex flex-col mx-auto ml-5 sm:justify-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Learn from experts
             <br /> Grow your career
@@ -18,11 +19,11 @@ const Metro = () => {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mt-4">
             Unlock your potential with guidance from industry leaders. Our mentors are here to help you achieve your career goals and take the next step toward success.
           </p>
-          <button className="bg-gray-800  text-white text-[22px] hover:text-black py-2 px-4  hover:bg-gray-300 mt-[24px] rounded-[40px] shadow-[6px_6px_0px_#000]">Explore our mentors</button>
+          <button className="bg-gray-800  text-white text-[22px] hover:text-black py-2 px-4  hover:bg-gray-300 mt-[24px] rounded-[40px] shadow-[6px_6px_0px_#000] w-1/2">Explore our mentors</button>
 
 
           {/* Stats Section */}
-          <div className="grid grid-cols-2 gap-6 w-5/6 rounded-lg lg:border  border-gray-800  mt-8 p-4">
+          <div className="grid grid-cols-2 gap-6 w-5/6 rounded-lg border  border-gray-800  mt-8 p-4">
             {[
               { value: "34+", text: "Expert mentors ready to help you succeed." },
               { value: "245K", text: "Success stories from our community." },
@@ -39,7 +40,7 @@ const Metro = () => {
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-wrap lg:flex-nowrap mx-auto items-center self-center gap-6">
+      <div className="flex flex-wrap lg:flex-nowrap mx-auto justify-center gap-6">
         <div className="flex flex-col  justify-between">
           <div className="mx-auto h-full">
             <Card imgSrc={star} label="branding" width="248px" height="240px" className="" />

@@ -3,7 +3,7 @@ import Metro from "./components/Metro.jsx";
 
 const Topsection = () => {
   return (
-    <div className="w-full h-full bg-[#F4F4F4]">
+    <div className="w-full h-full">
       <Title />
       <Metro />
     </div>

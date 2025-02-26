@@ -10,7 +10,7 @@ import Card from './Card';
 
 const Bottomright = () => {
   return (
-    <div className="flex flex-col  mx-auto bg-cover ml-10">
+    <div className="flex flex-col mx-auto bg-cover items-center">
       {/* First Row */}
       <div className="flex flex-row  w-full sr-only md:not-sr-only">
         <Card imgSrc={collage1} label="collage1" className="w-full max-w-md " />
@@ -38,7 +38,7 @@ const Bottomright = () => {
       </div>
 
       {/* Tags Image */}
-      <div className="z-40 absolute ml-36 hidden md:block">
+      <div className="z-40 absolute ml-28 hidden md:block">
         <Card imgSrc={Tags} label="Tags" width="339px" height="720px" className="max-w-full sm:max-w-lg" />
       </div>
     </div>
